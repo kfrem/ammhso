@@ -4,20 +4,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AM Mega Housing Solutions Limited — Corporate Profile 2025</title>
+<link rel="icon" type="image/png" href="brand-logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
-    --crimson: #8B1A1A;
-    --crimson-dark: #5C1010;
-    --crimson-light: #B02020;
-    --gold: #C8A96E;
-    --gold-light: #E8CEAA;
-    --charcoal: #1A1A1A;
-    --slate: #2C2C2C;
+    --brand-black: #050606;
+    --brand-burgundy: #7D2118;
+    --brand-burgundy-dark: #45100C;
+    --brand-red: #D92F24;
+    --brand-gold: #AA7A2B;
+    --brand-gold-light: #D6B777;
+    --crimson: var(--brand-burgundy);
+    --crimson-dark: var(--brand-burgundy-dark);
+    --crimson-light: var(--brand-red);
+    --gold: var(--brand-gold);
+    --gold-light: var(--brand-gold-light);
+    --charcoal: var(--brand-black);
+    --slate: #27201E;
     --mid: #5A5A5A;
     --light: #F5F3F0;
     --white: #FFFFFF;
-    --border: rgba(139,26,26,0.15);
+    --border: rgba(125,33,24,0.16);
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -44,7 +51,7 @@
     flex-direction: column;
     justify-content: flex-start;
     overflow: hidden;
-    background: var(--crimson-dark);
+    background: var(--brand-black);
   }
 
   .cover-bg {
@@ -61,62 +68,36 @@
     inset: 0;
     background: linear-gradient(
       160deg,
-      rgba(92,16,16,0.72) 0%,
-      rgba(26,26,26,0.85) 100%
+      rgba(69,16,12,0.82) 0%,
+      rgba(125,33,24,0.72) 43%,
+      rgba(5,6,6,0.90) 100%
     );
   }
 
   .cover-logo {
     position: absolute;
-    top: 48px;
+    top: 40px;
     left: 64px;
     display: flex;
     align-items: center;
-    gap: 14px;
     z-index: 10;
+    background: rgba(255,255,255,0.96);
+    border: 1px solid rgba(170,122,43,0.35);
+    border-radius: 4px;
+    padding: 10px 16px;
+    box-shadow: 0 12px 34px rgba(0,0,0,0.22);
   }
 
-  .logo-icon {
-    display: flex;
-    gap: 4px;
-    align-items: flex-end;
-  }
-
-  .logo-bar {
-    width: 6px;
-    background: var(--gold);
-    border-radius: 2px;
-  }
-  .logo-bar:nth-child(1) { height: 24px; }
-  .logo-bar:nth-child(2) { height: 36px; }
-  .logo-bar:nth-child(3) { height: 28px; }
-  .logo-bar:nth-child(4) { height: 18px; }
-
-  .logo-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-  }
-  .logo-text strong {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 800;
-    font-size: 22px;
-    color: var(--white);
-    letter-spacing: 0.05em;
-  }
-  .logo-text span {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 300;
-    font-size: 11px;
-    color: var(--gold-light);
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
+  .brand-logo {
+    display: block;
+    width: 134px;
+    height: auto;
   }
 
   .cover-content {
     position: relative;
     z-index: 10;
-    padding: 160px 64px 72px;
+    padding: 176px 64px 72px;
     max-width: 980px;
   }
 
@@ -150,7 +131,7 @@
     max-width: 900px;
   }
   .cover-title em {
-    color: var(--gold);
+    color: var(--brand-gold-light);
     font-style: normal;
   }
 
@@ -194,7 +175,7 @@
 
   /* ── NAV STRIP ── */
   .nav-strip {
-    background: var(--crimson);
+    background: var(--brand-black);
     display: flex;
     justify-content: center;
     gap: 0;
@@ -219,8 +200,8 @@
   }
   .nav-strip a:hover {
     color: var(--white);
-    background: rgba(255,255,255,0.08);
-    border-bottom-color: var(--gold);
+    background: rgba(217,47,36,0.18);
+    border-bottom-color: var(--brand-red);
   }
 
   /* ── SECTIONS ── */
@@ -235,7 +216,7 @@
     font-weight: 700;
     letter-spacing: 0.25em;
     text-transform: uppercase;
-    color: var(--crimson);
+    color: var(--brand-red);
     margin-bottom: 12px;
     display: flex;
     align-items: center;
@@ -245,7 +226,7 @@
     content: '';
     width: 24px;
     height: 2px;
-    background: var(--crimson);
+    background: var(--brand-red);
     flex-shrink: 0;
   }
 
@@ -288,7 +269,7 @@
     position: absolute;
     bottom: -28px;
     right: -28px;
-    background: var(--crimson);
+    background: linear-gradient(145deg, var(--brand-red), var(--brand-burgundy));
     color: var(--white);
     padding: 28px 32px;
     font-family: 'Playfair Display', serif;
@@ -304,7 +285,7 @@
 
   .reg-box {
     background: var(--light);
-    border-left: 4px solid var(--crimson);
+    border-left: 4px solid var(--brand-red);
     padding: 20px 24px;
     margin-top: 32px;
     border-radius: 0 2px 2px 0;
@@ -330,8 +311,8 @@
     position: relative;
     overflow: hidden;
   }
-  .mv-card.mission { background: var(--crimson); color: var(--white); }
-  .mv-card.vision { background: var(--charcoal); color: var(--white); }
+  .mv-card.mission { background: linear-gradient(145deg, var(--brand-red), var(--brand-burgundy)); color: var(--white); }
+  .mv-card.vision { background: var(--brand-black); color: var(--white); }
 
   .mv-card::before {
     content: '';
@@ -378,7 +359,7 @@
     background: var(--white);
     border: 1px solid var(--border);
     padding: 40px 32px;
-    border-top: 4px solid var(--crimson);
+    border-top: 4px solid var(--brand-red);
     border-radius: 2px;
     transition: box-shadow 0.25s;
   }
@@ -388,7 +369,7 @@
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--crimson);
+    color: var(--brand-red);
     margin-bottom: 14px;
   }
   .val-card p { font-size: 15px; color: var(--mid); line-height: 1.75; }
@@ -736,8 +717,9 @@
     .intro-grid, .mv-grid, .team-grid, .tech-layout, .market-layout, .contact-grid { grid-template-columns: 1fr; }
     .services-grid, .future-grid, .values-grid { grid-template-columns: 1fr 1fr; }
     .team-grid { grid-template-columns: 1fr 1fr; }
-    .cover-content { padding: 138px 24px 48px; }
-    .cover-logo { left: 24px; top: 32px; }
+    .cover-content { padding: 150px 24px 48px; }
+    .cover-logo { left: 24px; top: 28px; padding: 8px 12px; }
+    .brand-logo { width: 112px; }
     .cover-meta { grid-template-columns: repeat(2, minmax(130px, 1fr)); }
     .intro-img-badge { right: 0; bottom: -20px; }
   }
@@ -748,8 +730,8 @@
     .cover-title { font-size: clamp(39px, 13vw, 54px); }
     .cover-sub { font-size: 16px; line-height: 1.55; }
     .cover-meta { grid-template-columns: 1fr 1fr; gap: 18px; }
-    .logo-text strong { font-size: 19px; }
-    .logo-text span { font-size: 10px; }
+    .cover-logo { left: 20px; }
+    .brand-logo { width: 104px; }
   }
 </style>
 </head>
@@ -761,16 +743,7 @@
   <div class="cover-overlay"></div>
 
   <div class="cover-logo">
-    <div class="logo-icon">
-      <div class="logo-bar"></div>
-      <div class="logo-bar"></div>
-      <div class="logo-bar"></div>
-      <div class="logo-bar"></div>
-    </div>
-    <div class="logo-text">
-      <strong>AMMHSO</strong>
-      <span>Tanzania</span>
-    </div>
+    <img class="brand-logo" src="brand-logo.png" alt="AMMHSO logo">
   </div>
 
   <div class="cover-content">
